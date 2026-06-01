@@ -1,0 +1,231 @@
+/* ── PANEL ──────────────────────────────────────────────────────────────────── */
+
+.txa-panel         { display: block !important; }
+.txa-panel[hidden] { display: none  !important; }
+
+.txa-panel {
+  position: fixed !important;
+  top: 16px !important;
+  right: 16px !important;
+  width: 340px !important;
+  background: #232c3a !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.07) !important;
+  color: #fbfbfe !important;
+  font-family: -moz-default-font, system-ui, -apple-system, sans-serif !important;
+  font-size: 13px !important;
+  z-index: 2147483647 !important;
+  overflow: hidden !important;
+  user-select: none !important;
+  line-height: normal !important;
+  box-sizing: border-box !important;
+}
+
+/* Header */
+.txa-ph {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 10px 12px !important;
+  background: #1b2330 !important;
+  border-bottom: 1px solid rgba(255,255,255,0.09) !important;
+}
+
+.txa-ph-title {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #fbfbfe !important;
+  letter-spacing: 0.01em !important;
+}
+
+.txa-ph-btns {
+  display: flex !important;
+  gap: 2px !important;
+}
+
+.txa-ph-btn {
+  background: none !important;
+  border: none !important;
+  color: #9e9eb0 !important;
+  cursor: pointer !important;
+  padding: 3px 7px !important;
+  border-radius: 4px !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  font-family: inherit !important;
+  transition: background 0.1s, color 0.1s !important;
+}
+
+.txa-ph-btn:hover {
+  background: rgba(255,255,255,0.1) !important;
+  color: #fbfbfe !important;
+}
+
+/* Body */
+.txa-pb {
+  padding: 14px 14px 12px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  box-sizing: border-box !important;
+}
+
+/* Level selector */
+.txa-levels {
+  display: flex !important;
+  gap: 6px !important;
+}
+
+.txa-lvl {
+  flex: 1 !important;
+  display: flex !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.txa-lvl input[type="radio"] {
+  position: absolute !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  pointer-events: none !important;
+}
+
+.txa-lvl span {
+  flex: 1 !important;
+  display: block !important;
+  text-align: center !important;
+  padding: 5px 6px !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  border-radius: 4px !important;
+  font-size: 12px !important;
+  color: #cfcfd8 !important;
+  background: #2e3a4c !important;
+  transition: all 0.1s !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+}
+
+.txa-lvl input[type="radio"]:checked + span {
+  background: #4590aa !important;
+  border-color: #4590aa !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+.txa-lvl:hover span {
+  border-color: rgba(255,255,255,0.38) !important;
+  color: #fbfbfe !important;
+}
+
+/* Status */
+.txa-st {
+  font-size: 12px !important;
+  padding: 7px 10px !important;
+  border-radius: 4px !important;
+  line-height: 1.4 !important;
+  box-sizing: border-box !important;
+}
+
+.txa-st[data-type="loading"] { background: rgba(0,96,223,0.22) !important;  color: #6cb4f5 !important; }
+.txa-st[data-type="success"] { background: rgba(0,160,70,0.22) !important;  color: #54d17a !important; }
+.txa-st[data-type="error"]   { background: rgba(220,38,38,0.22) !important; color: #ff9aa2 !important; }
+
+/* Footer */
+.txa-pf {
+  display: flex !important;
+  align-items: center !important;
+  padding: 10px 14px !important;
+  background: #232c3a !important;
+  border-top: 1px solid rgba(255,255,255,0.07) !important;
+  box-sizing: border-box !important;
+}
+
+.txa-pf-right {
+  display: flex !important;
+  gap: 6px !important;
+  margin-left: auto !important;
+}
+
+.txa-btn {
+  padding: 6px 13px !important;
+  border-radius: 4px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  font-family: inherit !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  transition: background 0.1s !important;
+  line-height: 1.4 !important;
+  box-sizing: border-box !important;
+}
+
+.txa-btn:disabled { opacity: 0.4 !important; cursor: not-allowed !important; }
+
+.txa-pri {
+  background: #4590aa !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+.txa-pri:hover:not(:disabled) { background: #3a7a93 !important; }
+
+.txa-sec {
+  background: rgba(255,255,255,0.09) !important;
+  color: #fbfbfe !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+}
+.txa-sec:hover:not(:disabled) { background: rgba(255,255,255,0.15) !important; }
+
+.txa-ghost {
+  background: none !important;
+  color: #9e9eb0 !important;
+  border: none !important;
+  padding-left: 2px !important;
+  font-weight: 500 !important;
+}
+.txa-ghost:hover:not(:disabled) { color: #fbfbfe !important; }
+
+/* ── INLINE ADAPTED TEXT ─────────────────────────────────────────────────────── */
+
+mark.txa-adapted {
+  background-color: #fef3c7 !important;
+  border-bottom: 2px solid #f59e0b !important;
+  border-radius: 2px !important;
+  padding: 0 2px !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.txa-block-adapted {
+  display: block !important;
+  background-color: #f0fdf4 !important;
+  border-left: 3px solid #22c55e !important;
+  padding: 4px 8px !important;
+  border-radius: 0 4px 4px 0 !important;
+  color: inherit !important;
+}
+
+.txa-revert-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  font-size: 11px !important;
+  line-height: 1 !important;
+  padding: 2px 7px !important;
+  margin-left: 8px !important;
+  background: #ffffff !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 3px !important;
+  cursor: pointer !important;
+  color: #6b7280 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  vertical-align: middle !important;
+  white-space: nowrap !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.txa-revert-btn:hover {
+  background: #f3f4f6 !important;
+  color: #111827 !important;
+}
